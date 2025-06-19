@@ -2422,7 +2422,7 @@ a {
   margin-right: 1.5rem;
 }
 .cid-uObqqCfVmc {
-  padding-top: 6rem;
+  padding-top: 3rem;
   padding-bottom: 6rem;
   background-color: #ffffff;
 }
@@ -3148,6 +3148,14 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #f7f7f7;
+}
+.cid-uN3EDSwAU2 .img-col {
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .cid-uN3EDSwAU2 .content-wrapper {
+    padding: 0 2rem;
+  }
 }
 .cid-uN3EDSwAU2 img {
   width: 100%;
