@@ -1127,6 +1127,67 @@ a {
   padding-bottom: 10rem;
   background-image: url("../../../assets/images/whatsapp-2025-05-20-15.29.56-b5331202.jpg");
 }
+.cid-uMvbzbrIh5 .typewriter {
+  position: relative;
+  direction: rtl;
+  font-weight: bold;
+  display: inline-block;
+}
+.cid-uMvbzbrIh5 .typewriter span {
+  opacity: 0;
+  display: inline-block;
+  animation-fill-mode: forwards;
+  animation-name: appearLetter;
+  animation-duration: 0.6s;
+  animation-timing-function: steps(1);
+}
+.cid-uMvbzbrIh5 .typewriter span:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.cid-uMvbzbrIh5 .typewriter span:nth-child(2) {
+  animation-delay: 1.2s;
+}
+.cid-uMvbzbrIh5 .typewriter span:nth-child(3) {
+  animation-delay: 1.8s;
+}
+.cid-uMvbzbrIh5 .typewriter::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  height: 1.1em;
+  background-color: orange;
+  animation-name: moveCursor, blinkCursor;
+  animation-duration: 2.3s, 1s;
+  animation-timing-function: steps(1), step-end;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes appearLetter {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveCursor {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-0.8em);
+  }
+  66% {
+    transform: translateX(-1.6em);
+  }
+  100% {
+    transform: translateX(-2.4em);
+  }
+}
+@keyframes blinkCursor {
+  50% {
+    opacity: 0;
+  }
+}
 .cid-uMvbzbrIh5 .mbr-fallback-image.disabled {
   display: none;
 }
@@ -1157,6 +1218,33 @@ a {
 .cid-uMvbzbrIh5 .mbr-text,
 .cid-uMvbzbrIh5 .mbr-section-btn {
   text-align: center;
+}
+@keyframes change-text {
+  0% {
+    content: "שמש ציוד למסעדות";
+  }
+  33.33% {
+    content: "תכנון מטבחים";
+  }
+  66.66% {
+    content: "פוד טראקים";
+  }
+  100% {
+    content: "כלי מטבח";
+  }
+}
+.cid-uMvbzbrIh5 .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cid-uMvbzbrIh5 .text {
+  font-size: 2rem;
+}
+.cid-uMvbzbrIh5 .text::after {
+  display: block;
+  content: "שמש ציוד למסעדות";
+  animation: change-text 10s infinite;
 }
 .cid-uM0q7KtBxP {
   padding-top: 6rem;
@@ -1703,8 +1791,8 @@ a {
   }
 }
 .cid-uMRcE5QasL {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-uMRcE5QasL .mbr-fallback-image.disabled {
@@ -1794,10 +1882,19 @@ a {
   color: #000000;
   text-align: center;
 }
+.cid-uMRcE5QasL .header-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  display: block;
+}
 .cid-uMuCcEavjR {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 .cid-uMuCcEavjR .mbr-fallback-image.disabled {
   display: none;
@@ -1919,10 +2016,36 @@ a {
   text-align: center;
   color: #ef9444;
 }
+.cid-uMuCcEavjR .form01 {
+  position: relative;
+  overflow: hidden;
+}
+.cid-uMuCcEavjR .header-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  display: block;
+}
 .cid-uN9w3hL736 {
   padding-top: 0rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
+}
+.cid-uN9w3hL736 .header {
+  position: relative;
+  overflow: hidden;
+}
+.cid-uN9w3hL736 .header svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: block;
+  transform: scaleY(-1);
 }
 .cid-uN9w3hL736 .mbr-fallback-image.disabled {
   display: none;
@@ -1981,7 +2104,7 @@ a {
   margin-bottom: 0;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap .logo-wrap {
-  margin: 0 16px;
+  margin: 0 3px;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap .logo-wrap img {
   width: 110px;
@@ -2643,7 +2766,7 @@ a {
   text-align: center;
 }
 .cid-uN9w3hL736 {
-  padding-top: 0rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
@@ -2667,16 +2790,11 @@ a {
     padding: 0 26px;
   }
 }
-@media (max-width: 768px) {
-  .cid-uN9w3hL736 .container {
-    padding: 0 26px;
-  }
-}
 .cid-uN9w3hL736 .row {
   padding: 60px;
   margin: 0;
   border: 1px solid #ef9444;
-  padding: 120px 60px 60px 30px;
+  padding: 8px;
 }
 @media (max-width: 992px) {
   .cid-uN9w3hL736 .row {
@@ -2689,7 +2807,7 @@ a {
   }
 }
 .cid-uN9w3hL736 .title-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap {
   display: inline-flex;
@@ -2704,7 +2822,7 @@ a {
   margin-bottom: 0;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap .logo-wrap {
-  margin: 0 16px;
+  margin: 0 2px;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap .logo-wrap img {
   width: 110px;
@@ -2717,7 +2835,7 @@ a {
   }
 }
 .cid-uN9w3hL736 .nav-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .cid-uN9w3hL736 .nav-wrapper .list {
   display: inline-flex;
@@ -2732,7 +2850,7 @@ a {
   }
 }
 .cid-uN9w3hL736 .nav-wrapper .list .item-wrap {
-  margin-right: 56px;
+  margin-right: 36px;
   margin-bottom: 0;
   padding-bottom: 2px;
   position: relative;
@@ -2759,7 +2877,7 @@ a {
   margin-right: 0;
 }
 .cid-uN9w3hL736 .soc-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .cid-uN9w3hL736 .soc-wrapper .social-row {
   display: inline-flex;
@@ -3837,7 +3955,7 @@ a {
   color: #ef9444;
 }
 .cid-uN9w3hL736 {
-  padding-top: 0rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
@@ -3861,16 +3979,11 @@ a {
     padding: 0 26px;
   }
 }
-@media (max-width: 768px) {
-  .cid-uN9w3hL736 .container {
-    padding: 0 26px;
-  }
-}
 .cid-uN9w3hL736 .row {
   padding: 60px;
   margin: 0;
   border: 1px solid #ef9444;
-  padding: 120px 60px 60px 30px;
+  padding: 8px;
 }
 @media (max-width: 992px) {
   .cid-uN9w3hL736 .row {
@@ -3883,7 +3996,7 @@ a {
   }
 }
 .cid-uN9w3hL736 .title-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap {
   display: inline-flex;
@@ -3898,7 +4011,7 @@ a {
   margin-bottom: 0;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap .logo-wrap {
-  margin: 0 16px;
+  margin: 0 2px;
 }
 .cid-uN9w3hL736 .title-wrapper .title-wrap .logo-wrap img {
   width: 110px;
@@ -3911,7 +4024,7 @@ a {
   }
 }
 .cid-uN9w3hL736 .nav-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .cid-uN9w3hL736 .nav-wrapper .list {
   display: inline-flex;
@@ -3926,7 +4039,7 @@ a {
   }
 }
 .cid-uN9w3hL736 .nav-wrapper .list .item-wrap {
-  margin-right: 56px;
+  margin-right: 36px;
   margin-bottom: 0;
   padding-bottom: 2px;
   position: relative;
@@ -3953,7 +4066,7 @@ a {
   margin-right: 0;
 }
 .cid-uN9w3hL736 .soc-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .cid-uN9w3hL736 .soc-wrapper .social-row {
   display: inline-flex;
