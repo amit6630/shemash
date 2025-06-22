@@ -513,15 +513,13 @@
               "position": "relative",
               "direction": "rtl",
               "font-weight": "bold",
-              "display": "inline-block"
+              "display": "inline-block",
+              "white-space": "nowrap"
             },
             ".typewriter span": {
               "opacity": "0",
               "display": "inline-block",
-              "animation-fill-mode": "forwards",
-              "animation-name": "appearLetter",
-              "animation-duration": "0.6s",
-              "animation-timing-function": "steps(1)"
+              "animation": "appearLetter 0.5s steps(1) forwards"
             },
             ".typewriter span:nth-child(1)": {
               "animation-delay": "0.6s"
@@ -535,37 +533,22 @@
             ".typewriter::after": {
               "content": "\"\"",
               "position": "absolute",
-              "bottom": "0",
-              "right": "0",
-              "width": "2px",
-              "height": "1.1em",
+              "top": "0",
+              "left": "0",
+              "width": "1px",
+              "height": "1em",
               "background-color": "orange",
-              "animation-name": "moveCursor, blinkCursor",
-              "animation-duration": "2.3s, 1s",
-              "animation-timing-function": "steps(1), step-end",
-              "animation-iteration-count": "1, infinite",
-              "animation-fill-mode": "forwards"
+              "animation": "blinkCursor 1s step-end infinite"
             },
             "@keyframes appearLetter": {
-              "to": {
+              "100%": {
                 "opacity": "1"
               }
             },
-            "@keyframes moveCursor": {
-              "0%": {
-                "transform": "translateX(0)"
-              },
-              "33%": {
-                "transform": "translateX(-0.8em)"
-              },
-              "66%": {
-                "transform": "translateX(-1.6em)"
-              },
-              "100%": {
-                "transform": "translateX(-2.4em)"
-              }
-            },
             "@keyframes blinkCursor": {
+              "0%, 100%": {
+                "opacity": "1"
+              },
               "50%": {
                 "opacity": "0"
               }
