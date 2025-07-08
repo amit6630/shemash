@@ -1127,51 +1127,6 @@ a {
   padding-bottom: 10rem;
   background-image: url("../../../assets/images/whatsapp-2025-05-20-15.29.56-b5331202.jpg");
 }
-.cid-uMvbzbrIh5 .typewriter {
-  position: relative;
-  direction: rtl;
-  font-weight: bold;
-  display: inline-block;
-  white-space: nowrap;
-}
-.cid-uMvbzbrIh5 .typewriter span {
-  opacity: 0;
-  display: inline-block;
-  animation: appearLetter 0.5s steps(1) forwards;
-}
-.cid-uMvbzbrIh5 .typewriter span:nth-child(1) {
-  animation-delay: 0.6s;
-}
-.cid-uMvbzbrIh5 .typewriter span:nth-child(2) {
-  animation-delay: 1.2s;
-}
-.cid-uMvbzbrIh5 .typewriter span:nth-child(3) {
-  animation-delay: 1.8s;
-}
-.cid-uMvbzbrIh5 .typewriter::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1em;
-  background-color: orange;
-  animation: blinkCursor 1s step-end infinite;
-}
-@keyframes appearLetter {
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes blinkCursor {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 .cid-uMvbzbrIh5 .mbr-fallback-image.disabled {
   display: none;
 }
